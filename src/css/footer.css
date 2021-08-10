@@ -1,0 +1,6 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    background-image: url(../img/background-star.gif);
+    width: 100%;
+}
