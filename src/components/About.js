@@ -5,10 +5,10 @@ import "../css/about.css"
 function About() {
     return (
         <section className="container">
-            <div className="row">
-                <h1 className="col-12">Hello World!</h1>
+            <div className="row text-center">
+                <h1 className="col-12 my-3 p-4 opaque">Hello World!</h1>
                 {/* <img className="col-6" src={img1} alt="profile" style={{ width: "200px", height: "auto" }} /> */}
-                <div className="col-12">
+                <div className="col-12 opaque">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </div>
             </div>

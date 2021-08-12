@@ -4,3 +4,8 @@ footer{
     background-image: url(../img/background-star.gif);
     width: 100%;
 }
+
+.nav-link{
+    color: white !important;
+    text-decoration: none !important;
+}
