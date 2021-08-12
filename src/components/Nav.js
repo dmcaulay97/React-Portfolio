@@ -2,7 +2,7 @@ import React from "react";
 import "../css/nav.css"
 
 // Whenever we try to render an array containing JSX, React knows to render each JSX element separately
-function Nav() {
+function Nav(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
@@ -12,9 +12,9 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">About Me</a>
-            <a className="nav-link" href="#">Portfolio</a>
-            <a className="nav-link" href="#">Contact</a>
+            <a className="nav-link active" aria-current="page" onClick={() => props.setPage("about")} href="#">About Me</a>
+            <a className="nav-link" href="#" onClick={() => props.setPage("portfolio")}>Portfolio</a>
+            <a className="nav-link" onClick={() => props.setPage("contact")} href="#">Contact</a>
             <a className="nav-link" href="#">Resume</a>
           </div>
         </div>
