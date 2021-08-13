@@ -12,15 +12,21 @@ function App() {
 
   const [page, setPage] = useState("about");
 
+  const linkHandler = (link) => {
+    console.log(link);
+    window.open(link);
+  }
+
   const renderPage = (currentPage) => {
     if (currentPage === "about") {
       return <About />
     } else if (currentPage === "contact") {
       return <Contact />
     } else if (currentPage === "portfolio") {
-      return <Portfolio />
+      return <Portfolio linkHandler={linkHandler} />
     }
   }
+
 
   const handlePageChange = (newPage) => setPage(newPage)
 

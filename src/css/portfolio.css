@@ -14,7 +14,6 @@ h1{
 
 .projectImage{
     margin: 10px;
-    background-image: url(../img/sky.jpg);
     height: 100%
 }
 
@@ -26,8 +25,36 @@ h1{
 }
 
 .overlay:hover{
-    diplay: block;
     background-color: rgba(0, 0, 0, .5);
+}
+
+#proj1{
+    background-image: url(../img/vibez.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#proj2{
+    background-image: url(../img/pace.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+#proj3{
+    background-image: url(../img/fun.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+#proj4{
+    background-image: url(../img/workout.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    background-color: black;
+    color: white;
 }
 
 
