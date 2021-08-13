@@ -17,6 +17,7 @@ function App() {
     window.open(link);
   }
 
+
   const renderPage = (currentPage) => {
     if (currentPage === "about") {
       return <About />
@@ -30,13 +31,15 @@ function App() {
 
   const handlePageChange = (newPage) => setPage(newPage)
 
+
+
   return (
 
     <div id="background" style={{ height: "100%" }}>
       <div id="overlay" style={{ height: "100%" }}>
-        <Nav page={page} setPage={handlePageChange} />
+        <Nav page={page} setPage={handlePageChange} linkHandler={linkHandler} />
         {renderPage(page)}
-        <Footer />
+        <Footer linkHandler={linkHandler} />
       </div>
     </div>
   )

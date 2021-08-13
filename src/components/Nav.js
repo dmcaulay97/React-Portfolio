@@ -15,7 +15,7 @@ function Nav(props) {
             <a className="nav-link active" aria-current="page" onClick={() => props.setPage("about")} href="#">About Me</a>
             <a className="nav-link" href="#" onClick={() => props.setPage("portfolio")}>Portfolio</a>
             <a className="nav-link" onClick={() => props.setPage("contact")} href="#">Contact</a>
-            <a className="nav-link" href="#">Resume</a>
+            <a className="nav-link" href="#" onClick={() => props.linkHandler("https://docs.google.com/document/d/1nLZT_ntylzzDac_5RW__yr80ws1kfEQbNT5t0DNRHy4/edit?usp=sharing")}>Resume</a>
           </div>
         </div>
       </div>
