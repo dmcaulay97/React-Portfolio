@@ -1,8 +1,10 @@
 #background{
     background-image: url(../img/background2.gif) ;
     background-repeat: repeat-x;
+    min-height: calc(100vh - 40px);
 }
 
 #overlay{
     background: -webkit-linear-gradient( rgb(0, 0, 0, 0), rgb(89,34,116) 535px);
+    min-height: calc(100vh - 40px);
 }

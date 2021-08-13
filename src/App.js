@@ -35,12 +35,12 @@ function App() {
 
   return (
 
-    <div id="background" style={{ height: "100%" }}>
-      <div id="overlay" style={{ height: "100%" }}>
+    <div id="background">
+      <div id="overlay">
         <Nav page={page} setPage={handlePageChange} linkHandler={linkHandler} />
         {renderPage(page)}
-        <Footer linkHandler={linkHandler} />
       </div>
+      <Footer linkHandler={linkHandler} />
     </div>
   )
 }
