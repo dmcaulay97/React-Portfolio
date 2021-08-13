@@ -8,6 +8,16 @@ const notEmpty = (check, location, message) => {
         warning.textContent = message;
     } else {
         warning.textContent = ""
+        if (check === "email") {
+            const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            // const email = field.value;
+
+            if (!regex.test(field.value)) {
+                warning.textContent = "This is not a valid email"
+            } else {
+                warning.textContent = ""
+            }
+        }
     }
 
 }
