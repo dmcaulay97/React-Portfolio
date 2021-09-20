@@ -23,15 +23,15 @@ function Portfolio({ linkHandler }) {
                 </div>
                 <div className="projectContainer col-sm-6 my-3">
                     <div className="projectImage" id="proj3">
-                        <div className="overlay" onClick={() => linkHandler("https://dmcaulay97.github.io/fun-finder/homePage")}>
-                            <h2>Fun Finder <span class="githubLink" onClick={() => linkHandler("https://github.com/dmcaulay97/fun-finder")}>GitHub</span></h2>
+                        <div className="overlay" onClick={() => linkHandler("https://github.com/dmcaulay97/readme-generator")}>
+                            <h2>Readme Generator <span class="githubLink" onClick={() => linkHandler("https://github.com/dmcaulay97/readme-generator")}>GitHub</span></h2>
                         </div>
                     </div>
                 </div>
                 <div className="projectContainer col-sm-6 my-3">
                     <div className="projectImage" id="proj4">
-                        <div className="overlay" onClick={() => linkHandler("https://fierce-plateau-09186.herokuapp.com/?id=610833b7c663010015b4551c")}>
-                            <h2>Workout Tracker <span class="githubLink" onClick={() => linkHandler("https://github.com/dmcaulay97/workout-tracker")}>GitHub</span></h2>
+                        <div className="overlay" onClick={() => linkHandler("https://dmcaulay97.github.io/fun-finder/homePage")}>
+                            <h2>Fun Finder <span class="githubLink" onClick={() => linkHandler("https://github.com/dmcaulay97/fun-finder")}>GitHub</span></h2>
                         </div>
                     </div>
                 </div>

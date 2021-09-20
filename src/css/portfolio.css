@@ -1,3 +1,7 @@
+.font-link{
+    font-family: 'IBM Plex Sans Arabic'
+}
+
 section{
     padding-bottom: 40px;
 }
@@ -5,11 +9,11 @@ section{
 .opaque{
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    color: rgb(212, 212, 212);
+    color: rgb(241, 234, 234);
 }
 
 h1{
-    font-size: 50px;
+    font-size: 70px !important;
 }
 
 .projectContainer{
@@ -45,13 +49,13 @@ h1{
 }
 
 #proj3{
-    background-image: url(../img/fun.PNG);
+    background-image: url(../img/readme-gen.PNG);
     background-size: cover;
     background-position: center;
 }
 
 #proj4{
-    background-image: url(../img/workout.PNG);
+    background-image: url(../img/fun.PNG);
     background-size: cover;
     background-position: center;
 }

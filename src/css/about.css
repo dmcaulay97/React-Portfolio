@@ -1,13 +1,12 @@
-.opaque{
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    color: rgb(212, 212, 212);
-}
+.text{
+    font-size: 26px;
 
-h1{
-    font-size: 50px;
 }
 
 #me{
     height: 400px
+}
+
+img{
+    border-radius: 20px;
 }
