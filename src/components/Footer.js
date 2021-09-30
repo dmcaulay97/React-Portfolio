@@ -6,7 +6,7 @@ function Footer({ linkHandler }) {
         <footer className="mt-auto">
             <ul className="nav justify-content-center">
                 <li className="nav-item">
-                    <a className="nav-link" href="#" onClick={() => linkHandler("https://github.com/dmcaulay97")}>Github</a>
+                    <a className="nav-link" href="#" onClick={() => linkHandler("https://github.com/dmcaulay97")}>GitHub</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#" onClick={() => linkHandler("https://www.linkedin.com/in/dylan-mcaulay-8a4693159/")}>LinkedIn</a>

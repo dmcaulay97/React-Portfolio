@@ -10,3 +10,8 @@
 img{
     border-radius: 20px;
 }
+
+.highlight{
+    color: lightcoral;
+    font-size: 30px;
+}

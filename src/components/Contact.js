@@ -62,7 +62,10 @@ function Contact() {
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
-                <div className="col-8">
+                <div className="col-4">
+                </div>
+                <div className="col-4 opaque text font-link">
+                    Email: dmcaulay@gmail.com
                 </div>
             </div>
         </section>
