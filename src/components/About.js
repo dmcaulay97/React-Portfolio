@@ -17,6 +17,12 @@ function About() {
         name.textContent = str;
     }
 
+    const updateText = (arr) => {
+        const str = arrayToString(arr);
+        const name = document.getElementById("text")
+        name.innerHTML = str;
+    }
+
     const getRandomInt = (max) => {
         return Math.floor(Math.random() * max);
     }
@@ -29,7 +35,7 @@ function About() {
         return arr
     }
 
-    const bubbleSort = (arr, time, n = arr.length) => {
+    const bubbleSort = (arr, time, update, n = arr.length) => {
         setTimeout(() => {
             if (n === 1) {
                 return arr;
@@ -41,26 +47,36 @@ function About() {
                 }
             }
 
-            updateName(arr)
-            return bubbleSort(arr, time, n - 1)
+            update(arr)
+            return bubbleSort(arr, time, update, n - 1)
         }, time)
     }
 
-    const mixedName = () => {
-        const name = [["D", 0], ["y", 1], ["l", 2], ["a", 3], ["n", 4], [" ", 5], ["M", 6], ["c", 7], ["A", 8], ["u", 9], ["l", 10], ["a", 11], ["y", 12]]
-        let mixedName = []
-        for (let i = 0; i < 13; i++) {
-            const rand = getRandomInt(12 - i);
-            mixedName.push(name[rand]);
+    const stringToArray = (str) => {
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+            arr.push([str[i], i])
+        }
+        return arr;
+    }
+
+    stringToArray("Hello")
+
+    const mixedText = (str) => {
+        const name = stringToArray(str);
+        let mixedText = []
+        const length = name.length;
+        for (let i = 0; i < length; i++) {
+            const rand = getRandomInt(length - 1 - i);
+            mixedText.push(name[rand]);
             name.splice(rand, 1)
         }
-        return mixedName;
+        return mixedText;
 
     }
 
     useEffect(() => {
-        const mixed = mixedName()
-        bubbleSort(mixed, 200);
+        bubbleSort(mixedText("Dylan McAulay"), 200, updateName);
     })
 
 
@@ -69,7 +85,7 @@ function About() {
             <div className="row text-center">
                 <h1 className="col-12 my-3 p-4 opaque font-link" id="name">{``}</h1>
                 {/* <h1 className="col-12 my-3 p-4 opaque font-link">Dylan McAulay</h1> */}
-                <div className="col-md-12 col-lg-6 opaque py-3 text font-link">
+                <div className="col-md-12 col-lg-6 opaque py-3 text font-link" id="text">
                     Front end web developer, with degrees in Applied Mathematics and Physics, bringing an analytical lens to building websites and online tools. Earned a certificate in Full Stack Web Development from the University of Connecticut Coding Boot Camp. Dependable problem-solver with a passion for detail oriented design. Strengths in analytical thinking, communication, and adaptability<span>{<br />}</span>
                     <span className="highlight">Key Skills: HTML, CSS, JavsScript, Node, React, MongoDB</span>
                 </div>
