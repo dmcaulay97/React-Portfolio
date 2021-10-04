@@ -39,7 +39,7 @@ const messageCheck = () => {
 
 function Contact() {
     return (
-        <section className="container">
+        <section className="container" id="contact">
             <div className="row text-center">
                 <h1 className="col-12 my-3 p-4 opaque">Contact</h1>
             </div>
@@ -64,7 +64,7 @@ function Contact() {
                 </form>
                 <div className="col-4">
                 </div>
-                <div className="col-4 opaque text font-link">
+                <div className="col-4 opaque text font-link text-center">
                     Email: dmcaulay@gmail.com
                 </div>
             </div>

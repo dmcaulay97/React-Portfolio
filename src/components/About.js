@@ -85,7 +85,7 @@ function About() {
 
 
     return (
-        <section className="container">
+        <section className="container" id="about">
             <div className="row text-center">
                 <h1 className="col-12 my-3 p-4 opaque font-link" id="name">Dylan McAulay</h1>
                 {/* <h1 className="col-12 my-3 p-4 opaque font-link">Dylan McAulay</h1> */}

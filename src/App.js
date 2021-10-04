@@ -10,7 +10,7 @@ import "./css/app.css"
 
 function App() {
 
-  const [page, setPage] = useState("about");
+  // const [page, setPage] = useState("about");
 
   const linkHandler = (link) => {
     console.log(link);
@@ -18,18 +18,18 @@ function App() {
   }
 
 
-  const renderPage = (currentPage) => {
-    if (currentPage === "about") {
-      return <About />
-    } else if (currentPage === "contact") {
-      return <Contact />
-    } else if (currentPage === "portfolio") {
-      return <Portfolio linkHandler={linkHandler} />
-    }
-  }
+  // const renderPage = (currentPage) => {
+  //   if (currentPage === "about") {
+  //     return <About />
+  //   } else if (currentPage === "contact") {
+  //     return <Contact />
+  //   } else if (currentPage === "portfolio") {
+  //     return <Portfolio linkHandler={linkHandler} />
+  //   }
+  // }
 
 
-  const handlePageChange = (newPage) => setPage(newPage)
+  // const handlePageChange = (newPage) => setPage(newPage)
 
 
 
@@ -37,8 +37,10 @@ function App() {
 
     <div id="background">
       <div id="overlay">
-        <Nav page={page} setPage={handlePageChange} linkHandler={linkHandler} />
-        {renderPage(page)}
+        <Nav linkHandler={linkHandler} />
+        <About />
+        <Portfolio linkHandler={linkHandler} />
+        <Contact />
       </div>
       <Footer linkHandler={linkHandler} />
     </div>

@@ -3,7 +3,7 @@ import "../css/portfolio.css"
 
 function Portfolio({ linkHandler }) {
     return (
-        <section className="container">
+        <section className="container" id="portfolio">
             <div className="row text-center">
                 <h1 className="col-12 my-3 p-4 opaque">Portfolio</h1>
 
