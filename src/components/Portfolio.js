@@ -19,8 +19,8 @@ function Portfolio({ linkHandler }) {
                 </div>
                 <div className="projectContainer col-sm-6 my-3">
                     <div className="projectImage" id="proj2">
-                        <div className="overlay" onClick={() => linkHandler("https://dmcaulay97.github.io/Two-People/")}>
-                            <h2>Pace Calculator <span class="githubLink" onClick={() => linkHandler("https://github.com/dmcaulay97/Two-People")}>GitHub</span></h2>
+                        <div className="overlay" onClick={() => linkHandler("https://dmcaulay97.github.io/Pace-calculator/")}>
+                            <h2>Pace Calculator <span class="githubLink" onClick={() => linkHandler("https://github.com/dmcaulay97/Pace-calculator")}>GitHub</span></h2>
                             <div className="description">
                                 This application is designed to be used by runners looking to make pace calculations for races or training runs. Key Technologies: React, CSS, JavaScript
                             </div>

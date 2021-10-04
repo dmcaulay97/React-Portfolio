@@ -77,16 +77,20 @@ function About() {
 
     useEffect(() => {
         bubbleSort(mixedText("Dylan McAulay"), 200, updateName);
+        // bubbleSort(mixedText(`Front end web developer, with degrees in Applied Mathematics and Physics, bringing an analytical lens to building websites and online tools. Earned a certificate in Full Stack Web Development from the University of Connecticut Coding Boot Camp. Dependable problem-solver with a passion for detail oriented design. Strengths in analytical thinking, communication, and adaptability<span><br /></span>
+        // <span class='highlight'>Key Skills: HTML, CSS, JavsScript, Node, React, MongoDB</span>`), .00001, updateText)
+
+
     })
 
 
     return (
         <section className="container">
             <div className="row text-center">
-                <h1 className="col-12 my-3 p-4 opaque font-link" id="name">{``}</h1>
+                <h1 className="col-12 my-3 p-4 opaque font-link" id="name">Dylan McAulay</h1>
                 {/* <h1 className="col-12 my-3 p-4 opaque font-link">Dylan McAulay</h1> */}
                 <div className="col-md-12 col-lg-6 opaque py-3 text font-link" id="text">
-                    Front end web developer, with degrees in Applied Mathematics and Physics, bringing an analytical lens to building websites and online tools. Earned a certificate in Full Stack Web Development from the University of Connecticut Coding Boot Camp. Dependable problem-solver with a passion for detail oriented design. Strengths in analytical thinking, communication, and adaptability<span>{<br />}</span>
+                    Front end web developer, with degrees in Applied Mathematics and Physics, bringing an analytical lens to building websites and online tools. Earned a certificate in Full Stack Web Development from the University of Connecticut Coding Boot Camp. Dependable problem-solver with a passion for detail oriented design. Strengths in analytical thinking, communication, and adaptability<span><br /></span>
                     <span className="highlight">Key Skills: HTML, CSS, JavsScript, Node, React, MongoDB</span>
                 </div>
                 <div className="col-md-12 col-lg-6 p">
