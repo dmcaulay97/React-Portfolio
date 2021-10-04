@@ -65,7 +65,7 @@ function Contact() {
                 <div className="col-4">
                 </div>
                 <div className="col-4 opaque text font-link text-center">
-                    Email: dmcaulay@gmail.com
+                    Email: dmcaulay97@gmail.com
                 </div>
             </div>
         </section>
