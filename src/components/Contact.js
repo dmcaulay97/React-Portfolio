@@ -40,8 +40,8 @@ const messageCheck = () => {
 function Contact() {
     return (
         <section className="container" id="contact">
+            <h1 className="p-4 opaque text-center font-link">Contact</h1>
             <div className="row text-center">
-                <h1 className="col-12 my-3 p-4 opaque">Contact</h1>
             </div>
             <div className="row" >
                 <form className="col-4 opaque py-3">

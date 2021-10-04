@@ -4,9 +4,8 @@ import "../css/portfolio.css"
 function Portfolio({ linkHandler }) {
     return (
         <section className="container" id="portfolio">
+            <h1 className="p-4 opaque text-center font-link">Portfolio</h1>
             <div className="row text-center">
-                <h1 className="col-12 my-3 p-4 opaque">Portfolio</h1>
-
                 <div className="projectContainer col-sm-6 my-3">
                     <div className="projectImage" id="proj1">
                         <div className="overlay" onClick={() => linkHandler("https://thawing-shore-81087.herokuapp.com/")}>

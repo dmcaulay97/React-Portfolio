@@ -1,6 +1,5 @@
 .text{
     font-size: 26px;
-
 }
 
 #me{
@@ -12,6 +11,6 @@ img{
 }
 
 .highlight{
-    color: lightcoral;
+    color: #eeaec6;
     font-size: 30px;
 }

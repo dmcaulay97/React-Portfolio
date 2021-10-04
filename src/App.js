@@ -35,12 +35,24 @@ function App() {
 
   return (
 
-    <div id="background">
-      <div id="overlay">
+    <div>
+      <div>
         <Nav linkHandler={linkHandler} />
-        <About />
-        <Portfolio linkHandler={linkHandler} />
-        <Contact />
+        <div id="background-sky">
+          <div id="overlay-sky">
+            <About />
+          </div>
+        </div>
+        <div id="background-city">
+          <div id="overlay-city">
+            <Portfolio linkHandler={linkHandler} />
+          </div>
+        </div>
+        <div id="background-3">
+          <div id="overlay-3">
+            <Contact />
+          </div>
+        </div>
       </div>
       <Footer linkHandler={linkHandler} />
     </div>
