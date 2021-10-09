@@ -15,7 +15,7 @@ function Nav(props) {
             <a className="nav-link active" aria-current="page" href="#about">About Me</a>
             <a className="nav-link" href="#portfolio">Portfolio</a>
             <a className="nav-link" href="#contact">Contact</a>
-            <a className="nav-link" href="#" onClick={() => props.linkHandler("https://docs.google.com/document/d/1nLZT_ntylzzDac_5RW__yr80ws1kfEQbNT5t0DNRHy4/edit?usp=sharing")}>Resume</a>
+            <a className="nav-link" href="#" onClick={() => props.linkHandler("https://docs.google.com/document/d/1vhE1tvwksdFUDy-DsHaw1vkE99hXh1Du2fgoCJQrtQM/edit?usp=sharing")}>Resume</a>
           </div>
         </div>
       </div>
