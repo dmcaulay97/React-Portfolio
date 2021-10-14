@@ -41,7 +41,7 @@ function Portfolio({ linkHandler }) {
                         <div className="overlay" onClick={() => linkHandler("https://dmcaulay97.github.io/fun-finder/homePage")}>
                             <h2>Fun Finder <span class="githubLink" onClick={() => linkHandler("https://github.com/dmcaulay97/fun-finder")}>GitHub</span></h2>
                             <div className="description">
-                                A live event search engine powered by the Ticketmaster API. Key Technologies: Third Party API's, Bootstrap, Javascript.
+                                A live event search engine powered by the Ticketmaster API. Key Technologies: Third Party API's, Bootstrap, JavaScript.
                             </div>
                         </div>
                     </div>
